@@ -28,3 +28,11 @@ In RStudio just hit the "commit" button and add
 You can check your project "history" and status
 `git_status`
 `git log` (push Q to exit)
+
+5. Git Push to sync changes TO Github
+The Up arrow in RStudio
+`git push`
+
+6. Git Pull to sync FROM Github
+
+You can check your project "history" and status

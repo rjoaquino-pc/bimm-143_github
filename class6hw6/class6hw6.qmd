@@ -1,0 +1,63 @@
+---
+title: "class6hw6"
+author: Paige Contreras
+format: pdf
+---
+
+df <- data.frame(a=1:10, b=seq(200,400,length=10),c=11:20,d=NA)
+df$a <- (df$a - min(df$a)) / (max(df$a) - min(df$a))
+df$b <- (df$b - min(df$a)) / (max(df$b) - min(df$b))
+df$c <- (df$c - min(df$c)) / (max(df$c) - min(df$c))
+df$d <- (df$d - min(df$d)) / (max(df$a) - min(df$d)) 
+
+```{r}
+library(bio3d)
+s1 <- read.pdb("4AKE") # kinase with drug
+s2 <- read.pdb("1AKE") # kinase no drug
+s3 <- read.pdb("1E4Y") # kinase with drug
+s1.chainA <- trim.pdb(s1, chain="A", elety="CA")
+s2.chainA <- trim.pdb(s2, chain="A", elety="CA")
+s3.chainA <- trim.pdb(s1, chain="A", elety="CA")
+s1.b <- s1.chainA$atom$b
+s2.b <- s2.chainA$atom$b
+s3.b <- s3.chainA$atom$b
+plotb3(s1.b, sse=s1.chainA, typ="l", ylab="Bfactor")
+plotb3(s2.b, sse=s2.chainA, typ="l", ylab="Bfactor")
+plotb3(s3.b, sse=s3.chainA, typ="l", ylab="Bfactor")
+```
+
+
+> Q. What are the inputs to the function
+
+The names are the IDs of the protein structures
+
+> Q. what the function does and how to use it
+
+The function gives us the plot of the protein structures.
+
+> Q. What is the output of the function
+
+The output is the plot from the protein ID that we input. It will also give us a bfactor value of the protein. 
+
+```{r}
+library(bio3d)
+cluster_proteins <- function(pdb_id, chain = "A") {
+  pdb <- read.pdb(pdb_id)
+  pdb_chain <- trim.pdb(pdb, chain = chain, elet = "CA")
+b <- pdb_chain$atom$b
+
+plotb3(b, sse = pdb_chain, typ = "l", ylab = "B-factor")
+
+return(b)
+}
+```
+```{r}
+ hc <- hclust( dist( rbind(s1.b, s2.b, s3.b) ) )
+plot(hc)
+```
+
+```{r}
+cluster_proteins("1AKE")
+```
+
+

@@ -36,3 +36,4 @@ The Up arrow in RStudio
 6. Git Pull to sync FROM Github
 
 You can check your project "history" and status
+

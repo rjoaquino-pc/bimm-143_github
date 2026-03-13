@@ -1,0 +1,62 @@
+---
+title: "Lab 19 Cancer Mini-Project"
+author: "Paige Contreras (A16850883)"
+format: pdf
+---
+
+>Q1.
+
+download the sequences and move them to working project directory
+
+ran a blastp search against refseq protein and set the taxid to homo sapiens (taxid:9606)
+
+-Official symbol: **ERBB2**
+-official Full Name: **name**
+
+
+
+
+```{r}
+library(bio3d)
+a <- read.fasta("A16850883_mutant_seq.fa")
+```
+
+```{r}
+a$id
+```
+
+We can score conservation pre sequence position 
+
+>Q2. 
+
+```{r}
+s <- conserv(a)
+which( s != 1)
+mutation_positions <- which(s != 1)
+mutation_positions
+```
+
+```{r}
+a$ali[, 824]
+a$ali[, 861]
+a$ali[, 899]
+```
+Answer:
+N824V, I861E, F899Y
+
+
+
+>Q3 We can use the HMMER at the EBI (if it works) to find this information
+ERBB2
+or we can use uniprot 
+
+
+
+```{r}
+ref_seq <- a$ali[a$id == "wt_healthy", ]
+ref <- paste(ref_seq, collapse = "")
+cat(ref)
+```
+
+
+

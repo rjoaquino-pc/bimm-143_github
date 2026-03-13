@@ -16,3 +16,5 @@ Class 08 [Unsupervised Learning Mini-Project](class08/class08.md)
 Class 09 [Candy Mini-Project](class09/class09.md)
 
 Class 11 [Structural Bioinformatics (pt2. Focus on new AlphaFold2)](class11AlphaFoldcopy/class11.md)
+
+Class 13 [Transcriptomics and the analysis of RNA-Seq data](class13/class13.md)

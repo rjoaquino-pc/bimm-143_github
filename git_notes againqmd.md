@@ -1,0 +1,28 @@
+# Git Notes
+
+
+## Basics of using git
+
+Git is a distibuted version control system (VCS) that is very popular.
+The core steps to git involve
+
+1.  Initiate a git repository In RStudio we just click a little radio
+    button on project creation At the command line we type: `git init`
+
+2.  Do your normal work Add files Modify files etc.
+
+3.  Add your important files to the “stage” In RStudio we click “staged”
+    radio button `git add yourfilename`
+
+4.  Commit your staged files to the repository In RStudio just hit the
+    “commit” button and add \`git commit -m “your wee msg”
+
+You can check your project “history” and status `git_status` `git log`
+(push Q to exit)
+
+5.  Git Push to sync changes TO Github The Up arrow in RStudio
+    `git push`
+
+6.  Git Pull to sync FROM Github
+
+You can check your project “history” and status

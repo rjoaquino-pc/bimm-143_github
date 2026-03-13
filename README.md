@@ -11,6 +11,7 @@ Class 05 [Data viz with ggplot](class05/class05.md)
 
 Class 07 [Introduction to machine learning for Bioinformatics](class07/class07.md)
 
+Class 08 [Unsupervised Learning Mini-Project](class08/class08.md)
 
-
+Class 09 [Candy Mini-Project](class09/class09.md)
 

@@ -15,3 +15,4 @@ Class 08 [Unsupervised Learning Mini-Project](class08/class08.md)
 
 Class 09 [Candy Mini-Project](class09/class09.md)
 
+Class 12 [Genome informatics (online class)](class12/class12 intro to genome informatics lab.md)

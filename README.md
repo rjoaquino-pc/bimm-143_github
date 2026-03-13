@@ -5,7 +5,7 @@ My classwork from [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#15) 
 
 Introductory classes
 
-Class 04 [R fundamentals](class_4/class04.pdf)
+Class 04 [R fundamentals](class 4/class04.pdf)
 
 Class 05 [Data viz with ggplot](class05/class05.pdf)
 

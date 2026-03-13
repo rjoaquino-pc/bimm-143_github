@@ -5,7 +5,12 @@ My classwork from [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#15) 
 
 Introductory classes
 
-Class 04 [R fundamentals](class04/class04.pdf)
+Class 04 [R fundamentals](class04/class04.md)
 
 Class 05 [Data viz with ggplot](class05/class05.md)
+
+Class 07 [Introduction to machine learning for Bioinformatics](class07/class07.md)
+
+
+
 

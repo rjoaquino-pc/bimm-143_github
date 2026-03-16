@@ -24,3 +24,5 @@ Class 14 [RNA-Seq analysis mini-project](class14/class14.md)
 Class 17 [17: Analyzing sequencing data in the cloud]
 
 Class 18 [Mini Project: Investigating Pertussis Resurgence](class18/class18.md)
+
+Class 19 [Project: Cancer mutation analysis mini-project](class19/class1.md)

@@ -17,6 +17,8 @@ Class 09 [Candy Mini-Project](class09/class09.md)
 
 Class 11 [Structural Bioinformatics (pt2. Focus on new AlphaFold2)](class11AlphaFoldcopy/class11.md)
 
+Class 12[Genome informatics (online class)](class12IntrotoGenomeInformaticsLabcopy/class12introtogenomeinformaticslab.md)
+
 Class 13 [Transcriptomics and the analysis of RNA-Seq data](class13/class13.md)
 
 Class 14 [RNA-Seq analysis mini-project](class14/class14.md)
